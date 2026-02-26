@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply antialiased bg-sky-50/80 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors;
+}
+
+.font-cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Diary rich text area placeholder */
+[contenteditable].empty:before {
+  content: attr(data-placeholder);
+  color: #94a3b8;
+}
+.diary-content p { margin-bottom: 0.5rem; }
+.diary-content p:last-child { margin-bottom: 0; }
+.diary-content strong { font-weight: 600; }
+.diary-content em { font-style: italic; }

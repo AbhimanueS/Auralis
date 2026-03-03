@@ -9,7 +9,7 @@ const navItems = [
   { to: '/', label: 'Home' },
   { to: '/diary', label: 'Diary' },
   { to: '/ai-companion', label: 'AI companion' },
-  { to: '/calm-corner', label: 'Studymate' },
+  { to: '/studymate', label: 'Studymate' },
   { to: '/help', label: 'Help' },
   { to: '/about', label: 'About' },
 ];
@@ -66,7 +66,7 @@ export default function Layout() {
   };
 
   return (
-    <div className="min-h-screen bg-[#e8f4f8] dark:bg-gray-900 transition-colors">
+    <div className="min-h-screen bg-[#9fd6f5] dark:bg-gray-900 transition-colors">
       {/* Top header */}
       <header className="bg-white/90 dark:bg-gray-800/90 shadow-sm border-b border-sky-100 dark:border-gray-700 sticky top-0 z-30 transition-colors">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4 flex-wrap">

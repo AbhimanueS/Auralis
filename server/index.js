@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 import authRoutes from './routes/auth.js';
 import entryRoutes from './routes/entries.js';
 import aiRoutes from './routes/ai.js';
+import studymateRoutes from './routes/studymate.js';
 import { authMiddleware } from './middleware/auth.js';
 
 const app = express();
@@ -19,6 +20,7 @@ mongoose.connect(MONGO_URI).then(() => console.log('MongoDB connected')).catch((
 app.use('/api/auth', authRoutes);
 app.use('/api/entries', authMiddleware, entryRoutes);
 app.use('/api/ai', authMiddleware, aiRoutes);
+app.use('/api/studymate', authMiddleware, studymateRoutes);
 
 app.get('/api/health', (req, res) => res.json({ ok: true }));
 

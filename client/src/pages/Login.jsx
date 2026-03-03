@@ -25,22 +25,24 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-[#e0f2f7] flex flex-col md:flex-row">
-      {/* Left: Protect your mind graphic */}
+    <div className="min-h-screen bg-[#9fd6f5] flex flex-col md:flex-row">
       <div className="md:w-1/2 flex flex-col items-center justify-center p-8 md:p-12 text-center">
-        <div className="max-w-sm">
-          <h2
-            className="text-3xl md:text-5xl font-semibold mb-6 leading-tight tracking-wide"
-            style={{
-              fontFamily: "'Playfair Display', serif",
-              color: '#2d4a3e',
-              textShadow: '0 2px 20px rgba(45, 74, 62, 0.12)',
-              letterSpacing: '0.02em',
-            }}
-          >
-            PROTECT<br />YOUR MIND
-          </h2>
-          <div className="text-6xl">🧠 ☔</div>
+        <div className="w-full max-w-xl flex flex-col items-center">
+          <img
+            src="/hand-head.png"
+            alt="Auralis mental wellness illustration"
+            className="w-full max-w-[520px] h-auto"
+            loading="lazy"
+            draggable="false"
+          />
+          <div className="mt-6">
+            <div className="text-4xl md:text-5xl font-cursive text-gray-800">
+              Auralis
+            </div>
+            <div className="mt-2 text-sm md:text-base text-gray-700/80">
+              Protect your mind
+            </div>
+          </div>
         </div>
       </div>
 

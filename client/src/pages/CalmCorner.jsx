@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import WaterSortGame from '../components/WaterSortGame';
 
 const phases = [
   { name: 'Breathe in', duration: 4 },
@@ -216,6 +217,7 @@ function DoodleSection() {
 const TABS = [
   { id: 'breathing', label: 'Breathing' },
   { id: 'doodle', label: 'Doodle' },
+  { id: 'water-sort', label: 'Water Sort' },
 ];
 
 export default function CalmCorner() {
@@ -242,6 +244,7 @@ export default function CalmCorner() {
       </div>
       {activeTab === 'breathing' && <BreathingSection />}
       {activeTab === 'doodle' && <DoodleSection />}
+      {activeTab === 'water-sort' && <WaterSortGame />}
     </div>
   );
 }

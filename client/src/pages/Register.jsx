@@ -40,7 +40,7 @@ export default function Register() {
   };
 
   return (
-    <div className="min-h-screen bg-[#e0f2f7] flex flex-col md:flex-row">
+    <div className="min-h-screen bg-[#9fd6f5] flex flex-col md:flex-row">
       {/* Left: Branding */}
       <div className="md:w-1/2 flex flex-col items-center justify-center p-8 md:p-12 text-center">
         <div className="max-w-xs">

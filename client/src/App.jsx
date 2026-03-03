@@ -13,6 +13,7 @@ import Quizzes from './pages/Quizzes';
 import Help from './pages/Help';
 import About from './pages/About';
 import ForgotPassword from './pages/ForgotPassword';
+import Studymate from './pages/Studymate';
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth();
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="mood" element={<MoodCheck />} />
         <Route path="diary" element={<Diary />} />
         <Route path="calm-corner" element={<CalmCorner />} />
+        <Route path="studymate" element={<Studymate />} />
         <Route path="quizzes" element={<Quizzes />} />
         <Route path="counselling" element={<Counselling />} />
         <Route path="ai-companion" element={<AiCompanion />} />

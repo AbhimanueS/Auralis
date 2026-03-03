@@ -11,11 +11,11 @@ export default function Dashboard() {
   return (
     <div className="grid md:grid-cols-2 gap-8">
       {/* Left: Let's talk about mental health */}
-      <div className="rounded-2xl bg-white/80 dark:bg-gray-800/80 shadow-lg overflow-hidden flex items-center justify-center min-h-[280px] p-8">
+      <div className="rounded-2xl bg-white/80 dark:bg-gray-800/80 shadow-lg overflow-hidden flex items-center justify-center min-h-[600px] p-8">
         <div className="text-center">
           <div className="text-5xl md:text-6xl mb-4">🧠</div>
           <h2 className="text-xl md:text-2xl font-bold text-auralis-green-dark leading-tight">
-            LET&apos;S TALK ABOUT<br />MENTAL HEALTH
+            AURALIS
           </h2>
           <p className="mt-2 text-gray-600 dark:text-gray-400 text-sm">Your space to reflect and grow.</p>
         </div>

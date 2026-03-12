@@ -36,9 +36,7 @@ export default function Login() {
             draggable="false"
           />
           <div className="mt-6">
-            <div className="text-4xl md:text-5xl font-cursive text-gray-800">
-              Auralis
-            </div>
+            
             <div className="mt-2 text-sm md:text-base text-gray-700/80">
               Protect your mind
             </div>

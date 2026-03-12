@@ -10,6 +10,7 @@ const navItems = [
   { to: '/diary', label: 'Diary' },
   { to: '/ai-companion', label: 'AI companion' },
   { to: '/studymate', label: 'Studymate' },
+  { to: '/routine', label: 'Routine' },
   { to: '/help', label: 'Help' },
   { to: '/about', label: 'About' },
 ];

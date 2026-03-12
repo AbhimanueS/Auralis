@@ -1,43 +1,24 @@
 import { Link } from 'react-router-dom';
 
 const cards = [
-  { to: '/mood', title: 'Mood checking', image: '/dashboard/mood.jpg' },
-  { to: '/calm-corner', title: 'Calm Corner', image: '/dashboard/calm-corner.jpg' },
-  { to: '/quizzes', title: 'Quizzes', image: '/dashboard/quizzes.jpg' },
-  { to: '/counselling', title: 'Counselling', image: '/dashboard/counselling.jpg' },
+  { to: '/mood', title: 'Mood checking', image: '/dashboard/mood.jpeg' },
+  { to: '/calm-corner', title: 'Calm Corner', image: '/dashboard/calm.jpeg' },
+  { to: '/quizzes', title: 'Quizzes', image: '/dashboard/quizzes.jpeg' },
+  { to: '/counselling', title: 'Counselling', image: '/dashboard/coun.jpeg' },
 ];
 
 export default function Dashboard() {
   return (
     <div className="grid md:grid-cols-2 gap-8">
-      {/* Left: Let's talk about mental health */}
-      <div className="rounded-2xl bg-white/40 dark:bg-gray-800/50 shadow-lg overflow-hidden flex items-center justify-center min-h-[520px] p-6 md:p-8">
-        <div className="w-full flex items-center justify-center">
-          <img
-            src="/dashboard/lets-talk.png"
-            alt="Let's talk about mental health"
-            className="w-full max-w-[520px] h-auto object-contain"
-            loading="lazy"
-            draggable="false"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-            }}
-          />
-          <div className="text-center px-6" aria-hidden="true">
-            <div className="text-auralis-green-dark font-extrabold tracking-tight text-4xl sm:text-5xl leading-none">
-              LET&apos;S TALK
-            </div>
-            <div className="text-auralis-green-dark font-extrabold tracking-tight text-4xl sm:text-5xl leading-none mt-1">
-              ABOUT
-            </div>
-            <div className="text-auralis-green-dark font-extrabold tracking-tight text-4xl sm:text-5xl leading-none mt-1">
-              MENTAL
-            </div>
-            <div className="text-auralis-green-dark font-extrabold tracking-tight text-4xl sm:text-5xl leading-none mt-1">
-              HEALTH
-            </div>
-          </div>
-        </div>
+      {/* Left: hero illustration */}
+      <div> 
+        <img
+          src="/dashboard/letstalk.png"
+          alt="Let's talk about mental health"
+          className="w-full max-w-[620px] h-auto object-contain"
+          loading="lazy"
+          draggable="false"
+        />
       </div>
 
       {/* Right: 4 feature cards */}

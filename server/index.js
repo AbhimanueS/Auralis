@@ -6,6 +6,7 @@ import authRoutes from './routes/auth.js';
 import entryRoutes from './routes/entries.js';
 import aiRoutes from './routes/ai.js';
 import studymateRoutes from './routes/studymate.js';
+import routineRoutes from './routes/routine.js';
 import { authMiddleware } from './middleware/auth.js';
 
 const app = express();
@@ -21,6 +22,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/entries', authMiddleware, entryRoutes);
 app.use('/api/ai', authMiddleware, aiRoutes);
 app.use('/api/studymate', authMiddleware, studymateRoutes);
+app.use('/api/routine', authMiddleware, routineRoutes);
 
 app.get('/api/health', (req, res) => res.json({ ok: true }));
 

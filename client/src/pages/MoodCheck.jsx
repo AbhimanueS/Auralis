@@ -2,11 +2,12 @@ import { useState } from 'react';
 import api from '../api/axios';
 
 const moods = [
-  { value: 1, emoji: '😢', label: 'Very low' },
-  { value: 2, emoji: '😕', label: 'Low' },
-  { value: 3, emoji: '😐', label: 'Okay' },
-  { value: 4, emoji: '🙂', label: 'Good' },
-  { value: 5, emoji: '😊', label: 'Great' },
+  { value: 1, emoji: '1️', label: 'Very low' },
+  { value: 2, emoji: '2', label: 'Low' },
+  { value: 3, emoji: '3', label: 'Okay' },
+  { value: 4, emoji: '4', label: 'Good' },
+  { value: 5, emoji: '5', label: 'Great' },
+  
 ];
 
 export default function MoodCheck() {
@@ -43,6 +44,7 @@ export default function MoodCheck() {
       <h1 className="text-2xl font-semibold text-auralis-green-dark mb-6">Mood checking</h1>
       <div className="bg-white rounded-2xl shadow-lg p-6 space-y-6">
         <p className="text-gray-600">How are you feeling right now?</p>
+        <p className="text-gray-600">1-extreme sad, 5-extreme happy</p>
         <div className="flex flex-wrap gap-3">
           {moods.map(({ value, emoji, label }) => (
             <button
